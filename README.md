@@ -4,7 +4,7 @@
 ### Integrantes:
 
 * Claudia Miranda
-* Rodrigo
+* Rodrigo Cuenca
 
 ### INTRODUCCIÓN
 
