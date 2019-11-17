@@ -41,11 +41,9 @@ desventajas que conlleva cada algoritmo.
 En informática, la búsqueda por fuerza bruta es una técnica trivial pero muy usada, que consiste en probar sistemáticamente todas las posibles soluciones de un problema, hasta encontrarla. La búsqueda por fuerza bruta es usualmente sencilla de implementar y, siempre que exista, encuentra una solución. Sin embargo, su coste de ejecución es proporcional al número de soluciones candidatas, el cual es exponencialmente proporcional al tamaño del problema. 
 Por otro lado, la búsqueda por fuerza bruta se utiliza cuando el número de soluciones candidatos es mínimo o cuando previamente se puede resolver por algún otro método heurístico.
 
-#### BACKTRACKING
+#### PROGRAMACION DINAMICA
 
-El Backtracking es un algoritmo general para encontrar todas (o algunas) soluciones a algunos problemas computacionales, en particular problemas con ciertas restricciones, que aumenta gradualmente a los candidatos a las soluciones y abandona a un candidato ("backtracks") tan pronto como determina que el candidato no puede llegar a ser una solución válida. 
-El ejemplo clásico de libros es el problema de las ocho reinas, en el cual nos piden colocar 8 reinas en el tablero sin que las reinas puedan atacar a la otra en todas las direcciones en las que se mueve. En el enfoque común de retroceso, los candidatos parciales son arreglos de k reinas en las primeras k filas del tablero, todas en diferentes filas y columnas. Si existen soluciones parciales las cuales contengan dos reinas que se ataquen mutuamente, esa opción debe ser eliminada.
-El retroceso se usa con problemas que admitan el concepto de "solución candidata parcial" y si es posible realizar una prueba relativamente rápida de si posiblemente se puede completar con una solución válida. Sin embargo es inútil utilizarla, para localizar un valor dado en una tabla desordenada. Sin embargo, alrealizar este tipo de algoritmo, llega a ser mucho más rápido que la fuerza bruta, ya que se pueden eliminar muchos candidatos con una sola prueba.
+La programción dinámica 
 
 ### CONCLUSIONES
 
