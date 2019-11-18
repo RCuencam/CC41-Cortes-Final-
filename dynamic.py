@@ -1,4 +1,6 @@
 import heapq as hq
+import matplotlib.pyplot as plt
+import numpy as np
 
 ##b_s bins size
 ## size of box
