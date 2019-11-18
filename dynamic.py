@@ -53,7 +53,28 @@ def p_s(bin_size, av):
                           used + size * i)
                 else:
                     yield(bin, ((size, count),) + left, used)
-
+##geeks
+##fix
+def all_rotation(n):
+    index = 0
+  
+    for i in range(n): 
+  
+        rotation[index].h = arr[i].h 
+        rotation[index].d = max(arr[i].d, arr[i].w) 
+        rotation[index].w = min(arr[i].d, arr[i].w) 
+        index += 1
+  
+        rotation[index].h = arr[i].w 
+        rotation[index].d = max(arr[i].h, arr[i].d) 
+        rotation[index].w = min(arr[i].h, arr[i].d) 
+        index += 1
+  
+        rotation[index].h = arr[i].d 
+        rotation[index].d = max(arr[i].h, arr[i].w) 
+        rotation[index].w = min(arr[i].h, arr[i].w) 
+        index += 1
+  
 
 def sizes(arr,q,size_bin):
     sizes_boxs=[]
