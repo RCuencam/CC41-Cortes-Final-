@@ -8,7 +8,7 @@ def AreaTotal(resultado):
     return sumaa
 
 class Bin:
-    def __init__(self):
+    def _init_(self):
         self.list = []
  
     def AñadirPlaca(self, item):
@@ -204,17 +204,17 @@ def posicionar(largo,ancho,alto,arreglo,cantidad):
     
     return resultado
 
-ga=[4,2,6,4,4]
-print(posicionar(20,50,50,resultado,ga))
+ga=[4,2,6,4,4] ## Es la cantidad por tipo y de manera ordenada(si se configura el archivo.txt tambien se modifica este arreglo)
+print(posicionar(20,30,50,resultado,ga))
 #
-print(ordenado)
+#print(ordenado)
 
 
 
 
 desperdicio=((areaTotal(areas)/volumen)*100)
 
-#print(areas)
+##print(areas)
 
 
 
