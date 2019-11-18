@@ -8,7 +8,7 @@
 
 ### INTRODUCCIÓN
 
-Nuestro proyecto se basa en encontrar la solución a un problema sobre optimización de espacios para objetos tridimensionales. Para este proyecto estaremos implementando los algoritmos de: Fuerza Bruta, Backtracking. Lo que se espera de este proyecto es comparar los algoritmos implementados y analizar la eficencia de cada uno de ellos en la problemática presentada.
+Nuestro proyecto se basa en encontrar la solución a un problema sobre optimización de espacios para objetos tridimensionales. Para este proyecto estaremos implementando los algoritmos de: Fuerza Bruta, Programación Dinámica. Lo que se espera de este proyecto es comparar los algoritmos implementados y analizar la eficencia de cada uno de ellos en la problemática presentada.
 
 ### PROBLEMA
 
@@ -22,7 +22,7 @@ desventajas que conlleva cada algoritmo.
 ### OBJETIVOS
 
 **Objetivo General:** 
-- Al finalizar el curso,el estudiante genera distintos algoritmos de corte y empaquetamiento basándose en técnicas tales como Fuerza Bruta y BackTracking teniendo en cuenta las restricciones impuestas en clases.
+- Al finalizar el curso,el estudiante genera distintos algoritmos de corte y empaquetamiento basándose en técnicas tales como Fuerza Bruta y Programación Dinámica teniendo en cuenta las restricciones impuestas en clases.
 
 **Objetivos Específicos:**
 1. **Crear** algoritmos que solucione el problema de cortes y empaquetamientode con distintos métodos por integrante.
@@ -43,7 +43,8 @@ Por otro lado, la búsqueda por fuerza bruta se utiliza cuando el número de sol
 
 #### PROGRAMACION DINAMICA
 
-La programción dinámica 
+La programación dinámica es una técnica matemática que se utiliza para la solución de problemas matemáticos seleccionados, en los cuales se toma un serie de decisiones en forma secuencial. Frecuentemente para resolver un problema complejo se tiende a dividir este en subproblemas, más pequeños, resolver estos últimos (recurriendo posiblemente a nuevas subdivisiones) y combinar las soluciones obtenidas para calcular la solución del problema inicial.
+La programación dinámica se emplea a menudo para resolver problemas de optimización que satisfacen el principio de optimalidad: en una secuencia óptima de decisiones toda subsecuencia ha de ser también óptima.
 
 ### CONCLUSIONES
 
@@ -51,7 +52,5 @@ La programción dinámica
 Podemos utilizar fuerza bruta cuando queremos añadir las piezas de forma brusca para cumplir su objetivo. En este caso se realizó
 un algoritmo que encuentre el primer espacio disponible para poder insertar las piezas de acuerdo a su área. Es sugerible que se use este algoritmo por su fácil implementación, pero no es recomendable cuando existen muchos datos de entrada, ya que su tiempo de ejecución es exponencial. 
 
-**Backtracking**
-Podemos utilizar backtracking para añadir las piezas utilizando la menor cantidad de espacio del plano. 
-En este caso, comenzamos ordenando los anchos de los rectangulos, para evitar realizar cortes no necesarios. Luego de ellos los voy insertando la rectangulo padre, siempre guardando los puntos del rectangulo anterior.
- 
+**Programación dinámica**
+Podemos utilizar programación dinámica en problemas de optimización que se pueda dividir en etapas y que sea dinámico en el tiempo puede resolverse por programación dinámica.
