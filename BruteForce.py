@@ -1,4 +1,4 @@
-
+import heapq as hq
 
 def AreaTotal(resultado):
     n=len(resultado)
@@ -59,29 +59,7 @@ def SepararArea(arreglo):
 	
 	return a
 
-#
-def imprimir():
-	print("Area,ancho,alto")
-	print(MostrarAreas(G))
-	volumen=SepararArea(MostrarAreas(G))
-	
-	print("Sólo las areas")
-	print(volumen)
-	
-	print("Separando los cortes en cada plancha")
-	resultado=BinPacking(volumen,planchaArea)
-	print(resultado)
-	
-	nroCortes=len(resultado)
-	print("Numero de Planchas: ",nroCortes)
-	
-	print("Area Total:")
-	print(AreaTotal(volumen))
-	print(Desperdicio(AreaTotal(volumen)),"%")
 
-
-def posicionar(x,y,z,arreglo):
-    n=len(x)
 
 with open('archivo.txt') as f:
     
@@ -107,6 +85,11 @@ with open('archivo.txt') as f:
             CL.append(int(Y))
             CL.append(int(Z))
             areas.append(int(X)*int(Y)*int(Z))
+        print(G)
+        
+
+        
+        
         
 
 def areaTotal(areas):
@@ -137,22 +120,94 @@ for i in range(n):
     for j in range(3):
         resultado.append(a[i][j])
 
-print(ordenado)
-print(resultado)
 
-def localizar(arreglo):
+def posicionar(largo,ancho,alto,arreglo,cantidad):
+    q=0
+    x=arreglo[0]
+    y=arreglo[1]
+    z=arreglo[2]
+    A=[]
+    B=[]
+    C=[]
+    D=[]
+    E=[]
+    
+    
+    while z<alto and q<cantidad[0] and y<=ancho:
+        A.append((x,y,z))
+        z+=arreglo[2]
+        q+=1
 
-    temporal=[]
-    x=0
-    y=0
+    y+=arreglo[1]
+    z=0
+    q=0
+   
+
+    while z<alto and q<cantidad[1] and y<=ancho:
+        
+        B.append((x,y,z))
+        z+=arreglo[cantidad[1]*3+2]
+        q+=1
+
+    q=0
+    y+=arreglo[1]
     z=0
 
-    for i in range(3):
+
+    while z<alto and q<cantidad[2] and y<=ancho:
+        
+        C.append((x,y,z))
+        z+=arreglo[cantidad[2]*3+2]
+        
+        q+=1
+
+    q=0
+    y+=arreglo[1]
+    z=0
+
+    while z<alto and q<cantidad[3] and y<=ancho:
+        
+        D.append((x,y,z))
+        z+=arreglo[cantidad[3]*3+1]
+        q+=1
+
+    q=0
+    y+=arreglo[1]
+    z=0
+
+    while z<alto and q<cantidad[4] and y<=ancho:
+        
+        E.append((x,y,z))
+        z+=arreglo[len(arreglo)-1]
+        q+=1
+
+    while y>ancho and q<cantidad[3]:
+        A.append((x,y,z))
+        B.append((x,y,z))
+        C.append((x,y,z))
+        D.append((x,y,z))
+        E.append((x,y,z))
+        x+=arreglo[0]
+        z+=arreglo[2]
+        q+=1
+
+        
 
 
     
+    resultado=[]
+    resultado.append(A)
+    resultado.append(B)
+    resultado.append(C)
+    resultado.append(D)
+    resultado.append(E)
+    
+    return resultado
 
-
+ga=[4,2,6,4,4]
+print(posicionar(20,50,50,resultado,ga))
+#
+print(ordenado)
 
 
 
@@ -160,12 +215,15 @@ def localizar(arreglo):
 desperdicio=((areaTotal(areas)/volumen)*100)
 
 #print(areas)
+
+
+
+print("Cortes respecto a áreas: ")
+print(BinPacking(areas,volumen))
 #print(areaTotal(areas))
-
-
-#print(BinPacking(areas,volumen))
 #print(volumen)
-#print(desperdicio,"%")
-#G=[(4,5),(1,3),(2,4),(5,6)]
-planchaArea=30
-#print(imprimir())
+print("Desperdicio: ")
+print(desperdicio,"%")
+print("Posiciones: ")
+print(posicionar(20,50,50,resultado,ga))
+print(ordenado)
