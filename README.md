@@ -43,7 +43,8 @@ Por otro lado, la búsqueda por fuerza bruta se utiliza cuando el número de sol
 
 #### PROGRAMACION DINAMICA
 
-La programción dinámica 
+La programción dinámica es una técnica matemática que se utiliza para la solución de problemas matemáticos seleccionados, en los cuales se toma un serie de decisiones en forma secuencial. Frecuentemente para resolver un problema complejo se tiende a dividir este en subproblemas, más pequeños, resolver estos últimos (recurriendo posiblemente a nuevas subdivisiones) y combinar las soluciones obtenidas para calcular la solución del problema inicial.
+La programación dinámica se emplea a menudo para resolver problemas de optimización que satisfacen el principio de optimalidad: en una secuencia óptima de decisiones toda subsecuencia ha de ser también óptima.
 
 ### CONCLUSIONES
 
