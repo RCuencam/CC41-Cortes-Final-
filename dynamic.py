@@ -61,7 +61,8 @@ def sizes(arr,q,size_bin):
         sizes_boxs.append(h*w*d)
     
     box_result = bins(size_bin,sizes_boxs,q)
-    print(box_result)
+    print("First container", box_result[0])
+    print("Next container" , box_result[1])
 
 arr=[[1,1,5]
     ,[1,1,3]
