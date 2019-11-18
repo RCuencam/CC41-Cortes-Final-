@@ -22,7 +22,7 @@ desventajas que conlleva cada algoritmo.
 ### OBJETIVOS
 
 **Objetivo General:** 
-- Al finalizar el curso,el estudiante genera distintos algoritmos de corte y empaquetamiento basándose en técnicas tales como Fuerza Bruta y BackTracking teniendo en cuenta las restricciones impuestas en clases.
+- Al finalizar el curso,el estudiante genera distintos algoritmos de corte y empaquetamiento basándose en técnicas tales como Fuerza Bruta y Programación Dinámica teniendo en cuenta las restricciones impuestas en clases.
 
 **Objetivos Específicos:**
 1. **Crear** algoritmos que solucione el problema de cortes y empaquetamientode con distintos métodos por integrante.
