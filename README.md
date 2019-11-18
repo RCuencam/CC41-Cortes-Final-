@@ -8,7 +8,7 @@
 
 ### INTRODUCCIÓN
 
-Nuestro proyecto se basa en encontrar la solución a un problema sobre optimización de espacios para objetos tridimensionales. Para este proyecto estaremos implementando los algoritmos de: Fuerza Bruta, Backtracking. Lo que se espera de este proyecto es comparar los algoritmos implementados y analizar la eficencia de cada uno de ellos en la problemática presentada.
+Nuestro proyecto se basa en encontrar la solución a un problema sobre optimización de espacios para objetos tridimensionales. Para este proyecto estaremos implementando los algoritmos de: Fuerza Bruta, Programación Dinámica. Lo que se espera de este proyecto es comparar los algoritmos implementados y analizar la eficencia de cada uno de ellos en la problemática presentada.
 
 ### PROBLEMA
 
