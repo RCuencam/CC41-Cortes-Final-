@@ -58,13 +58,15 @@ def sizes(arr,q,size_bin):
     for h,w,d in arr:
         sizes_boxs.append(h*w*d)
     
-    answer = min_bins(size_bin,sizes_boxs,q)
-    print(answer)
+    box_result = bins(size_bin,sizes_boxs,q)
+    print(box_result)
 
 arr=[[1,1,5]
     ,[1,1,3]
     ,[1,1,2]]
-    q=[20,30,40] 
-    sizes(arr,q,25)    
+
+q=[20,30,40] 
+
+sizes(arr,q,25)    
 
 
